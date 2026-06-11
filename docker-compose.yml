@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: ltw-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: ltw_hrm
+      MYSQL_USER: ltw
+      MYSQL_PASSWORD: ltw_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - ltw-mysql-data:/var/lib/mysql
+
+volumes:
+  ltw-mysql-data:
