@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Application extends Model
 {
     protected $table = 'applications';
+
     protected $guarded = [];
 
     // TODO: define fillable, casts, relationships

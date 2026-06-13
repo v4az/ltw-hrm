@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Certification extends Model
 {
     protected $table = 'certifications';
+
     protected $guarded = [];
 
     // TODO: define fillable, casts, relationships

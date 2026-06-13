@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Shift extends Model
 {
     protected $table = 'shifts';
+
     protected $guarded = [];
 
     // TODO: define fillable, casts, relationships

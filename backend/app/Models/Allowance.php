@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Allowance extends Model
 {
     protected $table = 'allowances';
+
     protected $guarded = [];
 
     // TODO: define fillable, casts, relationships

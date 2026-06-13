@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Document extends Model
 {
     protected $table = 'documents';
+
     protected $guarded = [];
 
     // TODO: define fillable, casts, relationships

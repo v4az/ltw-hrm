@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Interview extends Model
 {
     protected $table = 'interviews';
+
     protected $guarded = [];
 
     // TODO: define fillable, casts, relationships

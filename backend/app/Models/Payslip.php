@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Payslip extends Model
 {
     protected $table = 'payslips';
+
     protected $guarded = [];
 
     // TODO: define fillable, casts, relationships
