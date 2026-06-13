@@ -7,32 +7,32 @@ use Illuminate\Http\Request;
 
 class NotificationController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function markRead(\Illuminate\Http\Request $request)
+    public function markRead(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function markAllRead(\Illuminate\Http\Request $request)
+    public function markAllRead(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function destroy(\Illuminate\Http\Request $request)
+    public function destroy(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function send(\Illuminate\Http\Request $request)
+    public function send(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

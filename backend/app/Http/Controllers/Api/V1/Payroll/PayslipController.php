@@ -7,17 +7,17 @@ use Illuminate\Http\Request;
 
 class PayslipController extends Controller
 {
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function download(\Illuminate\Http\Request $request)
+    public function download(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function employeeList(\Illuminate\Http\Request $request)
+    public function employeeList(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

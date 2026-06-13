@@ -7,112 +7,112 @@ use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function store(\Illuminate\Http\Request $request)
+    public function store(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function update(\Illuminate\Http\Request $request)
+    public function update(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function destroy(\Illuminate\Http\Request $request)
+    public function destroy(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function uploadAvatar(\Illuminate\Http\Request $request)
+    public function uploadAvatar(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function documents(\Illuminate\Http\Request $request)
+    public function documents(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function uploadDocument(\Illuminate\Http\Request $request)
+    public function uploadDocument(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function deleteDocument(\Illuminate\Http\Request $request)
+    public function deleteDocument(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function history(\Illuminate\Http\Request $request)
+    public function history(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function dependents(\Illuminate\Http\Request $request)
+    public function dependents(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function addDependent(\Illuminate\Http\Request $request)
+    public function addDependent(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function updateDependent(\Illuminate\Http\Request $request)
+    public function updateDependent(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function deleteDependent(\Illuminate\Http\Request $request)
+    public function deleteDependent(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function emergencyContacts(\Illuminate\Http\Request $request)
+    public function emergencyContacts(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function addEmergencyContact(\Illuminate\Http\Request $request)
+    public function addEmergencyContact(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function terminate(\Illuminate\Http\Request $request)
+    public function terminate(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function rehire(\Illuminate\Http\Request $request)
+    public function rehire(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function import(\Illuminate\Http\Request $request)
+    public function import(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function export(\Illuminate\Http\Request $request)
+    public function export(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function search(\Illuminate\Http\Request $request)
+    public function search(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function orgChart(\Illuminate\Http\Request $request)
+    public function orgChart(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

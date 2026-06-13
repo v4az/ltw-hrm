@@ -7,67 +7,67 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
-    public function register(\Illuminate\Http\Request $request)
+    public function register(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function login(\Illuminate\Http\Request $request)
+    public function login(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function logout(\Illuminate\Http\Request $request)
+    public function logout(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function refresh(\Illuminate\Http\Request $request)
+    public function refresh(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function forgotPassword(\Illuminate\Http\Request $request)
+    public function forgotPassword(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function resetPassword(\Illuminate\Http\Request $request)
+    public function resetPassword(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function verifyEmail(\Illuminate\Http\Request $request)
+    public function verifyEmail(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function resendVerification(\Illuminate\Http\Request $request)
+    public function resendVerification(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function changePassword(\Illuminate\Http\Request $request)
+    public function changePassword(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function me(\Illuminate\Http\Request $request)
+    public function me(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function enable2fa(\Illuminate\Http\Request $request)
+    public function enable2fa(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function verify2fa(\Illuminate\Http\Request $request)
+    public function verify2fa(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function disable2fa(\Illuminate\Http\Request $request)
+    public function disable2fa(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

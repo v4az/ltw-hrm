@@ -7,47 +7,47 @@ use Illuminate\Http\Request;
 
 class PayrollController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function generate(\Illuminate\Http\Request $request)
+    public function generate(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function update(\Illuminate\Http\Request $request)
+    public function update(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function destroy(\Illuminate\Http\Request $request)
+    public function destroy(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function approve(\Illuminate\Http\Request $request)
+    public function approve(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function disburse(\Illuminate\Http\Request $request)
+    public function disburse(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function payslips(\Illuminate\Http\Request $request)
+    public function payslips(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function summary(\Illuminate\Http\Request $request)
+    public function summary(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

@@ -7,37 +7,37 @@ use Illuminate\Http\Request;
 
 class SkillController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function store(\Illuminate\Http\Request $request)
+    public function store(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function update(\Illuminate\Http\Request $request)
+    public function update(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function destroy(\Illuminate\Http\Request $request)
+    public function destroy(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function employeeSkills(\Illuminate\Http\Request $request)
+    public function employeeSkills(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function attachSkill(\Illuminate\Http\Request $request)
+    public function attachSkill(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function detachSkill(\Illuminate\Http\Request $request)
+    public function detachSkill(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

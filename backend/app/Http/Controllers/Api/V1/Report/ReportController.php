@@ -7,57 +7,57 @@ use Illuminate\Http\Request;
 
 class ReportController extends Controller
 {
-    public function dashboard(\Illuminate\Http\Request $request)
+    public function dashboard(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function employees(\Illuminate\Http\Request $request)
+    public function employees(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function attendance(\Illuminate\Http\Request $request)
+    public function attendance(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function leaves(\Illuminate\Http\Request $request)
+    public function leaves(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function payroll(\Illuminate\Http\Request $request)
+    public function payroll(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function performance(\Illuminate\Http\Request $request)
+    public function performance(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function recruitment(\Illuminate\Http\Request $request)
+    public function recruitment(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function training(\Illuminate\Http\Request $request)
+    public function training(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function turnover(\Illuminate\Http\Request $request)
+    public function turnover(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function custom(\Illuminate\Http\Request $request)
+    public function custom(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function export(\Illuminate\Http\Request $request)
+    public function export(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

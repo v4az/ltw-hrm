@@ -7,57 +7,57 @@ use Illuminate\Http\Request;
 
 class LeaveController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function store(\Illuminate\Http\Request $request)
+    public function store(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function update(\Illuminate\Http\Request $request)
+    public function update(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function destroy(\Illuminate\Http\Request $request)
+    public function destroy(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function approve(\Illuminate\Http\Request $request)
+    public function approve(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function reject(\Illuminate\Http\Request $request)
+    public function reject(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function employeeHistory(\Illuminate\Http\Request $request)
+    public function employeeHistory(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function balance(\Illuminate\Http\Request $request)
+    public function balance(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function calendar(\Illuminate\Http\Request $request)
+    public function calendar(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function pending(\Illuminate\Http\Request $request)
+    public function pending(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

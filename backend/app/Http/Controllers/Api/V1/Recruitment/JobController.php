@@ -7,42 +7,42 @@ use Illuminate\Http\Request;
 
 class JobController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function store(\Illuminate\Http\Request $request)
+    public function store(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function update(\Illuminate\Http\Request $request)
+    public function update(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function destroy(\Illuminate\Http\Request $request)
+    public function destroy(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function publish(\Illuminate\Http\Request $request)
+    public function publish(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function close(\Illuminate\Http\Request $request)
+    public function close(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function publicList(\Illuminate\Http\Request $request)
+    public function publicList(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

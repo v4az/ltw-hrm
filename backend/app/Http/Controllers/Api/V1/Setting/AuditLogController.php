@@ -7,17 +7,17 @@ use Illuminate\Http\Request;
 
 class AuditLogController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function userTrail(\Illuminate\Http\Request $request)
+    public function userTrail(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

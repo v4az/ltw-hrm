@@ -7,47 +7,47 @@ use Illuminate\Http\Request;
 
 class RoleController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function store(\Illuminate\Http\Request $request)
+    public function store(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function update(\Illuminate\Http\Request $request)
+    public function update(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function destroy(\Illuminate\Http\Request $request)
+    public function destroy(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function permissions(\Illuminate\Http\Request $request)
+    public function permissions(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function attachPermissions(\Illuminate\Http\Request $request)
+    public function attachPermissions(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function detachPermission(\Illuminate\Http\Request $request)
+    public function detachPermission(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function assign(\Illuminate\Http\Request $request)
+    public function assign(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

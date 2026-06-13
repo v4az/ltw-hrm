@@ -7,42 +7,42 @@ use Illuminate\Http\Request;
 
 class ApplicationController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function store(\Illuminate\Http\Request $request)
+    public function store(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function updateStatus(\Illuminate\Http\Request $request)
+    public function updateStatus(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function destroy(\Illuminate\Http\Request $request)
+    public function destroy(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function offer(\Illuminate\Http\Request $request)
+    public function offer(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function hire(\Illuminate\Http\Request $request)
+    public function hire(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function reject(\Illuminate\Http\Request $request)
+    public function reject(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }

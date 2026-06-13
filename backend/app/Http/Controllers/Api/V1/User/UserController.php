@@ -7,52 +7,52 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index(\Illuminate\Http\Request $request)
+    public function index(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function store(\Illuminate\Http\Request $request)
+    public function store(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function show(\Illuminate\Http\Request $request)
+    public function show(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function update(\Illuminate\Http\Request $request)
+    public function update(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function destroy(\Illuminate\Http\Request $request)
+    public function destroy(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function activate(\Illuminate\Http\Request $request)
+    public function activate(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function deactivate(\Illuminate\Http\Request $request)
+    public function deactivate(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function resetPassword(\Illuminate\Http\Request $request)
+    public function resetPassword(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function sessions(\Illuminate\Http\Request $request)
+    public function sessions(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
 
-    public function revokeSession(\Illuminate\Http\Request $request)
+    public function revokeSession(Request $request)
     {
         return response()->json(['todo' => __FUNCTION__]);
     }
