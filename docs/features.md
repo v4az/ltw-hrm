@@ -17,12 +17,10 @@ Complete feature inventory for the Human Resource Management system. Each module
 | 11 | Performance & KPIs/Goals | 143–161 | Reviews, 360 feedback, KPIs, OKRs |
 | 12 | Recruitment | 162–189 | Job postings, candidates, applications, interviews, offers, hiring |
 | 13 | Training & Certifications | 190–204 | Programs, enrollment, completion, certs expiry |
-| 14 | Skills Catalog | 205–211 | Skill bank, employee skill mapping |
-| 15 | Schedule & Shifts | 212–224 | Work schedules, shifts, shift swaps |
-| 16 | Holidays | 225–229 | Holiday calendar |
-| 17 | Reports & Analytics | 230–240 | Dashboard, headcount, attendance, payroll, turnover, custom export |
-| 18 | Documents & Contracts | 241–253 | File upload, e-sign, expiring contracts |
-| 19 | Notifications & Announcements | 254–263 | In-app notifications, company-wide broadcasts |
-| 20 | Settings & Audit | 264–272 | Company profile, working hours, audit logs |
+| 14 | Schedule & Shifts | 205–217 | Work schedules, shifts, shift swaps |
+| 15 | Reports & Analytics | 218–228 | Dashboard, headcount, attendance, payroll, turnover, custom export |
+| 16 | Documents & Contracts | 229–241 | File upload, e-sign, expiring contracts |
+| 17 | Notifications & Announcements | 242–251 | In-app notifications, company-wide broadcasts |
+| 18 | Settings & Audit | 252–260 | Company profile, working hours, audit logs |
 
-**Total:** 20 modules, 272 API routes.
+**Total:** 18 modules, 260 API routes.
