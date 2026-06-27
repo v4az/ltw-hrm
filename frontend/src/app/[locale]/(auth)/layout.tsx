@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { GuestOnly } from "@/components/auth/guest-only";
 
 export default function AuthLayout({
   children,
@@ -12,7 +13,7 @@ export default function AuthLayout({
         <h1 className="mb-6 text-center text-2xl font-bold text-slate-900 dark:text-slate-100">
           {t("appName")}
         </h1>
-        {children}
+        <GuestOnly>{children}</GuestOnly>
       </div>
     </main>
   );
