@@ -20,7 +20,7 @@ class RolePermissionTest extends TestCase
 
         $admin = User::factory()->create();
         $admin->assignRole('admin');
-        Sanctum::actingAs($admin);
+        Sanctum::actingAs($admin, ['access']);
     }
 
     public function test_can_list_roles(): void

@@ -12,7 +12,6 @@ use App\Http\Requests\Auth\TwoFactorVerifyRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
 use App\Services\Auth\TwoFactorService;
-use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -83,8 +82,6 @@ class AuthController extends Controller
         if (Role::where('name', 'employee')->where('guard_name', 'web')->exists()) {
             $user->assignRole('employee');
         }
-
-        event(new Registered($user));
 
         return (new UserResource($user->load('roles')))
             ->additional($this->issueTokens($user))
@@ -196,6 +193,25 @@ class AuthController extends Controller
         $user = User::findOrFail($validated['id']);
 
         if (! hash_equals(sha1($user->getEmailForVerification()), $validated['hash'])) {
+            return response()->json(['message' => 'Invalid verification link.'], 403);
+        }
+
+        if (! $user->hasVerifiedEmail()) {
+            $user->markEmailAsVerified();
+        }
+
+        return response()->json(['message' => 'Email verified successfully.']);
+    }
+
+    /**
+     * Handle the signed verification link delivered by email
+     * (the `verification.verify` named route used by the notification).
+     */
+    public function verifyEmailLink(Request $request, string $id, string $hash): JsonResponse
+    {
+        $user = User::findOrFail($id);
+
+        if (! hash_equals(sha1($user->getEmailForVerification()), $hash)) {
             return response()->json(['message' => 'Invalid verification link.'], 403);
         }
 

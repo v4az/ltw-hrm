@@ -68,7 +68,7 @@ class AuthenticationTest extends TestCase
     public function test_me_returns_the_authenticated_user(): void
     {
         $user = User::factory()->create();
-        Sanctum::actingAs($user);
+        Sanctum::actingAs($user, ['access']);
 
         $this->getJson('/api/v1/auth/me')
             ->assertOk()
@@ -78,7 +78,7 @@ class AuthenticationTest extends TestCase
     public function test_user_can_change_password(): void
     {
         $user = User::factory()->create(['password' => 'OldPassword123!']);
-        Sanctum::actingAs($user);
+        Sanctum::actingAs($user, ['access']);
 
         $this->postJson('/api/v1/auth/change-password', [
             'current_password' => 'OldPassword123!',

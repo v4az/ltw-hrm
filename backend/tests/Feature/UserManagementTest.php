@@ -22,7 +22,7 @@ class UserManagementTest extends TestCase
     {
         $admin = User::factory()->create();
         $admin->assignRole('admin');
-        Sanctum::actingAs($admin);
+        Sanctum::actingAs($admin, ['access']);
 
         return $admin;
     }
@@ -75,7 +75,7 @@ class UserManagementTest extends TestCase
     {
         $user = User::factory()->create();
         $user->assignRole('employee');
-        Sanctum::actingAs($user);
+        Sanctum::actingAs($user, ['access']);
 
         $this->getJson('/api/v1/users')->assertForbidden();
     }

@@ -12,6 +12,9 @@ Route::prefix('auth')->group(function (): void {
     Route::post('reset-password', [AuthController::class, 'resetPassword']);
     Route::post('verify-email', [AuthController::class, 'verifyEmail']);
     Route::post('resend-verification', [AuthController::class, 'resendVerification']);
+    Route::get('email/verify/{id}/{hash}', [AuthController::class, 'verifyEmailLink'])
+        ->middleware('signed')
+        ->name('verification.verify');
     Route::post('2fa/verify', [AuthController::class, 'verify2fa']);
 
     // Authenticated routes (access-scoped token required).
