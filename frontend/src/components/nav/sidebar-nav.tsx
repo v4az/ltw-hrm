@@ -29,7 +29,6 @@ const NAV_GROUPS: Array<{
       { key: "attendance", href: "/attendance" },
       { key: "leaves", href: "/leaves" },
       { key: "schedules", href: "/schedules" },
-      { key: "holidays", href: "/holidays" },
     ],
   },
   {
@@ -48,7 +47,6 @@ const NAV_GROUPS: Array<{
       { key: "applications", href: "/recruitment/applications" },
       { key: "interviews", href: "/recruitment/interviews" },
       { key: "training", href: "/training" },
-      { key: "skills", href: "/skills" },
     ],
   },
   {

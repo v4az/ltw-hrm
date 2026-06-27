@@ -22,9 +22,7 @@ Route::prefix('v1')->middleware('auth:sanctum')->group(function (): void {
     require __DIR__.'/api/v1/performance.php';
     require __DIR__.'/api/v1/recruitment.php';
     require __DIR__.'/api/v1/training.php';
-    require __DIR__.'/api/v1/skills.php';
     require __DIR__.'/api/v1/schedules.php';
-    require __DIR__.'/api/v1/holidays.php';
     require __DIR__.'/api/v1/reports.php';
     require __DIR__.'/api/v1/documents.php';
     require __DIR__.'/api/v1/notifications.php';
