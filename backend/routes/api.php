@@ -7,8 +7,8 @@ Route::prefix('v1')->group(function (): void {
     require __DIR__.'/api/v1/auth.php';
 });
 
-// Authenticated routes
-Route::prefix('v1')->middleware('auth:sanctum')->group(function (): void {
+// Authenticated routes — require an access-scoped token (refresh tokens are rejected here)
+Route::prefix('v1')->middleware(['auth:sanctum', 'abilities:access'])->group(function (): void {
     require __DIR__.'/api/v1/users.php';
     require __DIR__.'/api/v1/roles.php';
     require __DIR__.'/api/v1/permissions.php';

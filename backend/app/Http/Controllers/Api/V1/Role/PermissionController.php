@@ -3,32 +3,61 @@
 namespace App\Http\Controllers\Api\V1\Role;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\Permission\StorePermissionRequest;
+use App\Http\Requests\Permission\UpdatePermissionRequest;
+use App\Http\Resources\PermissionResource;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Spatie\Permission\Models\Permission;
 
 class PermissionController extends Controller
 {
-    public function index(Request $request)
+    /**
+     * List all permissions.
+     */
+    public function index(): AnonymousResourceCollection
     {
-        return response()->json(['todo' => __FUNCTION__]);
+        return PermissionResource::collection(Permission::all());
     }
 
-    public function store(Request $request)
+    /**
+     * Create a new permission.
+     */
+    public function store(StorePermissionRequest $request): JsonResponse
     {
-        return response()->json(['todo' => __FUNCTION__]);
+        $permission = Permission::create(['name' => $request->name]);
+
+        return (new PermissionResource($permission))
+            ->response()
+            ->setStatusCode(201);
     }
 
-    public function show(Request $request)
+    /**
+     * Show a single permission.
+     */
+    public function show(string $id): PermissionResource
     {
-        return response()->json(['todo' => __FUNCTION__]);
+        return new PermissionResource(Permission::findOrFail($id));
     }
 
-    public function update(Request $request)
+    /**
+     * Update a permission's name.
+     */
+    public function update(UpdatePermissionRequest $request, string $id): PermissionResource
     {
-        return response()->json(['todo' => __FUNCTION__]);
+        $permission = Permission::findOrFail($id);
+        $permission->update(['name' => $request->name]);
+
+        return new PermissionResource($permission);
     }
 
-    public function destroy(Request $request)
+    /**
+     * Delete a permission.
+     */
+    public function destroy(string $id): JsonResponse
     {
-        return response()->json(['todo' => __FUNCTION__]);
+        Permission::findOrFail($id)->delete();
+
+        return response()->json(['message' => 'Permission deleted successfully.']);
     }
 }
