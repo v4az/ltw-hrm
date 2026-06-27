@@ -42,7 +42,7 @@ class RolePermissionTest extends TestCase
 
     public function test_can_attach_and_detach_permission(): void
     {
-        $role = Role::create(['name' => 'auditor']);
+        $role = Role::create(['name' => 'auditor', 'guard_name' => 'web']);
         $permission = \Spatie\Permission\Models\Permission::where('name', 'users.view')->first();
 
         $this->postJson("/api/v1/roles/{$role->id}/permissions", [

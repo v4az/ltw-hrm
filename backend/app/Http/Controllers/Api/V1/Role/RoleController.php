@@ -30,7 +30,9 @@ class RoleController extends Controller
      */
     public function store(StoreRoleRequest $request): JsonResponse
     {
-        $role = Role::create(['name' => $request->name]);
+        // Pin to the web guard so role/permission guards match the seeded
+        // permissions (the app default guard is sanctum).
+        $role = Role::create(['name' => $request->name, 'guard_name' => 'web']);
 
         if ($request->filled('permissions')) {
             $role->syncPermissions($request->permissions);
